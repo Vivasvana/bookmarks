@@ -1,0 +1,19 @@
+<form [formGroup]="form"  #formDirective="ngForm" (ngSubmit)="onSubmit(form, formDirective)">
+  <mat-form-field class="form-field">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput formControlName="name" required>
+  </mat-form-field>
+  <mat-form-field class="form-field">
+    <mat-label>Url</mat-label>
+    <input type="text" matInput formControlName="url" required>
+  </mat-form-field>
+  <mat-form-field class="form-field">
+    <mat-label>Group</mat-label>
+    <mat-select formControlName="group" required>
+      <mat-option *ngFor="let group of groupList" [value]="group">
+        {{group}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>
