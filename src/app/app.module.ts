@@ -12,14 +12,17 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { BookmarkListComponent } from './bookmark-list/bookmark-list.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FilterOnGroupPipe } from './bookmark-list/group-filter.pipe';
+import { ModalDeleteComponent } from './bookmark-list/modal-delete/modal-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookmarkCreateComponent,
     BookmarkListComponent,
-    FilterOnGroupPipe
+    FilterOnGroupPipe,
+    ModalDeleteComponent
   ],
+  entryComponents: [ModalDeleteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

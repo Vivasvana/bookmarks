@@ -6,6 +6,9 @@
         <mat-icon mat-list-icon class="icon-display" color="primary">bookmark</mat-icon>
         <h3 mat-line>{{bookmark.name}}</h3>
         <p mat-line> {{bookmark.url}} </p>
+        <button (click)="openDeleteModal(bookmark)" mat-icon-button aria-label="Delete bookmark">
+          <mat-icon>delete</mat-icon>
+        </button>
         <mat-divider></mat-divider>
       </mat-list-item>
     </mat-list>
