@@ -22,7 +22,11 @@ export function bookmarkListReducer(
         ...state,
         bookmarks: [...state.bookmarks, action.payload]
       };
-
+    case BookmarkListActions.DELETE_BOOKMARK:
+      return {
+        ...state,
+        bookmarks: state.bookmarks.filter((bookmark: Bookmark) => bookmark.id !== action.payload)
+      };
     default:
       return state;
   }
