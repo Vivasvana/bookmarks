@@ -1,5 +1,5 @@
 import { FilterOnGroupPipe } from './group-filter.pipe';
-import {Bookmark} from "./bookmark";
+import {Bookmark} from "../bookmark";
 
 describe('FilterOnGroupPipe', () => {
   let pipe: FilterOnGroupPipe;

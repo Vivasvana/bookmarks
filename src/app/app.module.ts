@@ -11,8 +11,9 @@ import {BookmarkCreateComponent} from "./bookmark-create/bookmark-create.compone
 import {ReactiveFormsModule} from "@angular/forms";
 import { BookmarkListComponent } from './bookmark-list/bookmark-list.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { FilterOnGroupPipe } from './bookmark-list/group-filter.pipe';
+import { FilterOnGroupPipe } from './bookmark-list/pipes/group-filter.pipe';
 import { ModalDeleteComponent } from './bookmark-list/modal-delete/modal-delete.component';
+import {GetGroupPipe} from "./bookmark-list/pipes/get-group.pipe";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ModalDeleteComponent } from './bookmark-list/modal-delete/modal-delete.
     BookmarkCreateComponent,
     BookmarkListComponent,
     FilterOnGroupPipe,
+    GetGroupPipe,
     ModalDeleteComponent
   ],
   entryComponents: [ModalDeleteComponent],

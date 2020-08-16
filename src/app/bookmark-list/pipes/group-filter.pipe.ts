@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {Bookmark} from "./bookmark";
+import {Bookmark} from "../bookmark";
 
 @Pipe({
   name: 'filterOnGroup'
