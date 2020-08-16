@@ -18,9 +18,15 @@ The user is able to delete any bookmark. The user has to confirm deletion to pre
 <img src="images/bookmark_deletion.png">
 
 
-## Development server
+## Run application on the local machine
+1) Clone the repository.
+2) Go to the root folder in a terminal.
+3) Make sure node.js is installed on the machine.
+4) Run `npm install`.
+5) Run `ng serve`.
+6) Navigate to `http://localhost:4200/`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The app will automatically reload if you change any of the source files.
 
 ## Build
 
