@@ -11,11 +11,14 @@ import {BookmarkCreateComponent} from "./bookmark-create/bookmark-create.compone
 import {ReactiveFormsModule} from "@angular/forms";
 import { BookmarkListComponent } from './bookmark-list/bookmark-list.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FilterOnGroupPipe } from './bookmark-list/group-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookmarkCreateComponent
+    BookmarkCreateComponent,
+    BookmarkListComponent,
+    FilterOnGroupPipe
   ],
   imports: [
     BrowserModule,

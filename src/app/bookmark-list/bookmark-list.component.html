@@ -1,0 +1,15 @@
+<h2>All bookmarks</h2>
+<mat-tab-group [selectedIndex]="selectedTab" (selectedIndexChange)="onTabChanged($event)">
+  <mat-tab *ngFor="let group of groupList; let index = index" [label]="group | uppercase">
+    <mat-list>
+      <mat-list-item *ngFor="let bookmark of (bookmarkList$ | async | filterOnGroup : group)">
+        <mat-icon mat-list-icon class="icon-display" color="primary">bookmark</mat-icon>
+        <h3 mat-line>{{bookmark.name}}</h3>
+        <p mat-line> {{bookmark.url}} </p>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+</mat-tab-group>
+
+
