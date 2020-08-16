@@ -5,11 +5,13 @@ This web-application allows a user to manage a bookmark list. The user can add a
 The first section of the app is a form where a user can add a new bookmark.
 Each bookmark has 3 required fields. They are the name, the url and the group.
 There are three groups. The group list is static intentionally because there is no requirement/description how the user should manage the bookmark group list.
+Empty list with invalid form
+<img src="images/invalid-form.png">
 
+Added first bookmark
 <img src="images/add_first_bookmark.png">
 
 In the second section the user can see all bookmarks which grouped by the group field. Grouping implemented by tabs. Each tab displays bookmarks from corresponding group.
-
 <img src="images/add_second_bookmark.png">
 
 The user is able to delete any bookmark. The user has to confirm deletion to prevent unintentionally action.

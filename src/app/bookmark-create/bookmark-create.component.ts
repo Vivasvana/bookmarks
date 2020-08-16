@@ -41,7 +41,7 @@ export class BookmarkCreateComponent implements OnInit {
       new AddBookmark(this.bookmarkCreateService.createNewBookmark(value.name, value.url, value.group))
     );
     this._snackBar.open('A new bookmark has been added', '', {
-      duration: 1200,
+      duration: 22200,
       horizontalPosition: 'right',
       verticalPosition: 'top',
     });
